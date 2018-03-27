@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="banner">
+    <image src="{{image}}" mode="aspectFill"></image>
+    <text class="title">{{title}}</text>
+    <text class="image-source">{{imageSource}}</text>
+  </view>
+  <view class="body">
+    <view class="b-title" wx:if="{{body.title}}">{{body.title}}</view>
+    <view class="info">
+      <image class="info-img" src="{{body.avatar}}"></image>
+      <text class="author">{{body.author}}</text>   
+      <text class="bio"><text wx:if="{{body.bio}}">{{body.bio}}</text></text>
+    </view>
+    <rich-text nodes="{{body.nodes}}"></rich-text>
+  </view>
+</view>

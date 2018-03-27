@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/content/content"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#01a2ed",
+    "navigationBarTitleText": "知乎日报（测试）",
+    "navigationBarTextStyle": "white"
+  }
+}
