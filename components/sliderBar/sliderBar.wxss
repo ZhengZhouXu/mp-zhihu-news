@@ -1,1 +1,24 @@
 /* components/sliderBar/sliderBar.wxss */
+
+.slider-bar {
+  height: 100%;
+}
+
+.bar-head {
+  background-color: #01a2ed;
+}
+
+/* user */
+.user {
+  display: flex;  
+}
+
+.user .user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.user .user-name {
+  flex: 1;
+}

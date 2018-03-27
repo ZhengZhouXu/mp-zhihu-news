@@ -1,4 +1,13 @@
 /**index.wxss**/
+.slider-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 700rpx;
+  z-index: 1000;
+}
+
 .new-wrapper {
   background-color: #f3f3f3
 }

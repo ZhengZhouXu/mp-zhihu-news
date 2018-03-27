@@ -2,8 +2,7 @@
 <view class="container">
   <view class=".new-wrapper">
     <swiper class="swiper" indicator-dots="true" autoplay="true" >
-        <swiper-item wx:for="{{topStories}}">
-        
+        <swiper-item wx:for="{{topStories}}">        
           <view class="top-wrapper">
             <navigator url="../content/content?id={{item.id}}">
               <text class="top-title">{{item.title}}</text>

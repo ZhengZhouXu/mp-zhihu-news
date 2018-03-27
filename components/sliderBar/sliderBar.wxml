@@ -1,4 +1,10 @@
 <!--components/sliderBar/sliderBar.wxml-->
-<view>
-
+<view class="slider-bar">
+  <view class="bar-head">
+    <view class="user">
+      <image src="./default.jpg" class="user-avatar"></image>
+      <text class="user-name">请登录</text>
+      
+    </view>
+  </view>
 </view>
