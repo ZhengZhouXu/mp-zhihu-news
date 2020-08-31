@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "slider-bar": "/components/slider-bar/slider-bar"
+  }
+}

@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/classify/classify",
     "pages/index/index",
     "pages/content/content"
   ],
@@ -8,5 +9,6 @@
     "navigationBarBackgroundColor": "#01a2ed",
     "navigationBarTitleText": "知乎日报（测试）",
     "navigationBarTextStyle": "white"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

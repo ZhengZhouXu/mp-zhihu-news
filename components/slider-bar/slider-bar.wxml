@@ -1,0 +1,8 @@
+<!--components/slider-bar.wxml-->
+<view id="slider-bar" class="slider-bar" bindtap="onTap">
+  <view class="bar-item" wx:for="{{list}}">
+    {{item.name}}
+  </view>
+
+  <view id="test">111</view>
+</view>

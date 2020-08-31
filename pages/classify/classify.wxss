@@ -1,0 +1,82 @@
+/* pages/classify/classify.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .classify-tab */
+.classify-tab {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx 0rpx;
+  overflow-x: scroll;
+  white-space: nowrap;
+  height: 48rpx;
+  width: 100%;
+  background-color: #eee;
+}
+.classify-tab::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.classify-tab .tab-item {
+  font-size: 32rpx;
+  padding: 0 8px;
+  flex-basis: 172rpx;
+}
+
+/* .goods-classify-list */
+.goods-classify-list {
+  padding-top: 68rpx;
+  width: 100%;
+}
+.goods-classify-list .classify-name {
+  text-align: center;
+  margin: 20rpx 0;
+}
+.goods-list .goods-item {
+  display: flex;
+  flex-direction: row;
+  height: 200rpx;
+  align-items: center;
+  padding: 10rpx 20rpx;
+}
+.goods-list .goods-item .goods-item-img{
+  flex-basis: 200rpx;
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #eee;
+}
+
+.goods-list .goods-item .goods-item-info{
+  margin-left: 16rpx;
+  flex: 1;
+  height: 100%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start; */
+}
+.goods-item-info .goods-item-name {
+  width: 400rpx;
+  height: 28rpx;
+  background-color: #eee;
+  margin-bottom: 16rpx;
+}
+.goods-item-info .goods-item-price {
+  width: 100rpx;
+  height: 28rpx;
+  background-color: #eee;
+  margin-bottom: 16rpx;
+}
+.goods-item-info .goods-item-desc {
+  width: 100%;
+  height: 110rpx;
+  background-color: #eee;
+  margin-bottom: 16rpx;
+}
+
+

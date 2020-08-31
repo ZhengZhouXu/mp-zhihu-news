@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <view class=".new-wrapper">
+  <view class="new-wrapper">
     <swiper class="swiper" indicator-dots="true" autoplay="true" >
         <swiper-item wx:for="{{topStories}}">        
           <view class="top-wrapper">
@@ -10,7 +10,7 @@
             </navigator>  
           </view>          
         </swiper-item>
-    </swiper> 
+    </swiper>
     <view class="stories-group" wx:for="{{storyList}}" wx:for-item="list">
       <view class="stories-box">
         <text class="s-b-title">{{list.title}}</text>

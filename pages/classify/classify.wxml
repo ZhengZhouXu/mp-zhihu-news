@@ -1,0 +1,217 @@
+<view class="container">
+	<!-- <view class="classify-tab">
+		<view class="tab-item">
+			水果
+		</view>
+		<view class="tab-item">
+			蔬菜
+		</view>
+		<view class="tab-item">
+			肉类
+		</view>
+		<view class="tab-item">
+			牛奶
+		</view>
+		<view class="tab-item">
+			饮料
+		</view>
+
+		<view class="tab-item">
+			水果2
+		</view>
+		<view class="tab-item">
+			蔬菜2
+		</view>
+		<view class="tab-item">
+			肉类2
+		</view>
+		<view class="tab-item">
+			牛奶2
+		</view>
+		<view class="tab-item">
+			饮料2
+		</view>
+	</view> -->
+	<slider-bar id="slider-bar"></slider-bar>	
+
+	<view id="goods-classify-list" class="goods-classify-list" bindtap="onTap">
+		<view class="goods-classify" data-name="水果">
+			<view class="classify-name">
+				- 水果 -
+			</view>
+			<view class="goods-list">
+				<view class="goods-item">
+					<view class="goods-item-img"></view>
+					<view class="goods-item-info">
+						<view class="goods-item-name"></view>
+						<view class="goods-item-price"></view>
+						<view class="goods-item-desc"></view>
+					</view>
+				</view>
+
+				<view class="goods-item">
+					<view class="goods-item-img"></view>
+					<view class="goods-item-info">
+						<view class="goods-item-name"></view>
+						<view class="goods-item-price"></view>
+						<view class="goods-item-desc"></view>
+					</view>
+				</view>
+
+				<view class="goods-item">
+					<view class="goods-item-img"></view>
+					<view class="goods-item-info">
+						<view class="goods-item-name"></view>
+						<view class="goods-item-price"></view>
+						<view class="goods-item-desc"></view>
+					</view>
+				</view>
+
+				<view class="goods-item">
+					<view class="goods-item-img"></view>
+					<view class="goods-item-info">
+						<view class="goods-item-name"></view>
+						<view class="goods-item-price"></view>
+						<view class="goods-item-desc"></view>
+					</view>
+				</view>
+
+				<view class="goods-item">
+					<view class="goods-item-img"></view>
+					<view class="goods-item-info">
+						<view class="goods-item-name"></view>
+						<view class="goods-item-price"></view>
+						<view class="goods-item-desc"></view>
+					</view>
+				</view>
+
+				<view class="goods-item">
+					<view class="goods-item-img"></view>
+					<view class="goods-item-info">
+						<view class="goods-item-name"></view>
+						<view class="goods-item-price"></view>
+						<view class="goods-item-desc"></view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<view class="goods-classify" data-name="蔬菜">
+			<view class="classify-name">
+				- 蔬菜 -
+			</view>
+			<view class="goods-list">
+				<view class="goods-item">
+					<view class="goods-item-img"></view>
+					<view class="goods-item-info">
+						<view class="goods-item-name"></view>
+						<view class="goods-item-price"></view>
+						<view class="goods-item-desc"></view>
+					</view>
+				</view>
+
+				<view class="goods-item">
+					<view class="goods-item-img"></view>
+					<view class="goods-item-info">
+						<view class="goods-item-name"></view>
+						<view class="goods-item-price"></view>
+						<view class="goods-item-desc"></view>
+					</view>
+				</view>
+
+				<view class="goods-item">
+					<view class="goods-item-img"></view>
+					<view class="goods-item-info">
+						<view class="goods-item-name"></view>
+						<view class="goods-item-price"></view>
+						<view class="goods-item-desc"></view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<view class="goods-classify" data-name="肉类">
+			<view class="classify-name">
+				- 肉类 -
+			</view>
+			<view class="goods-list">
+				<view class="goods-item">
+					<view class="goods-item-img"></view>
+					<view class="goods-item-info">
+						<view class="goods-item-name"></view>
+						<view class="goods-item-price"></view>
+						<view class="goods-item-desc"></view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<view class="goods-classify" data-name="牛奶">
+			<view class="classify-name">
+				- 牛奶 -
+			</view>
+			<view class="goods-list">
+				<view class="goods-item">
+					<view class="goods-item-img"></view>
+					<view class="goods-item-info">
+						<view class="goods-item-name"></view>
+						<view class="goods-item-price"></view>
+						<view class="goods-item-desc"></view>
+					</view>
+				</view>
+
+				<view class="goods-item">
+					<view class="goods-item-img"></view>
+					<view class="goods-item-info">
+						<view class="goods-item-name"></view>
+						<view class="goods-item-price"></view>
+						<view class="goods-item-desc"></view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<view class="goods-classify" data-name="饮料">
+			<view class="classify-name">
+				- 饮料 -
+			</view>
+			<view class="goods-list">
+				<view class="goods-item">
+					<view class="goods-item-img"></view>
+					<view class="goods-item-info">
+						<view class="goods-item-name"></view>
+						<view class="goods-item-price"></view>
+						<view class="goods-item-desc"></view>
+					</view>
+				</view>
+
+				<view class="goods-item">
+					<view class="goods-item-img"></view>
+					<view class="goods-item-info">
+						<view class="goods-item-name"></view>
+						<view class="goods-item-price"></view>
+						<view class="goods-item-desc"></view>
+					</view>
+				</view>
+
+				<view class="goods-item">
+					<view class="goods-item-img"></view>
+					<view class="goods-item-info">
+						<view class="goods-item-name"></view>
+						<view class="goods-item-price"></view>
+						<view class="goods-item-desc"></view>
+					</view>
+				</view>
+
+				<view class="goods-item">
+					<view class="goods-item-img"></view>
+					<view class="goods-item-info">
+						<view class="goods-item-name"></view>
+						<view class="goods-item-price"></view>
+						<view class="goods-item-desc"></view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
