@@ -1,4 +1,4 @@
-<view class="container">
+<view class="container" scroll-y>
 	<!-- <view class="classify-tab">
 		<view class="tab-item">
 			水果
@@ -32,60 +32,33 @@
 			饮料2
 		</view>
 	</view> -->
-	<slider-bar id="slider-bar"></slider-bar>	
+	<!-- <view class="test">
+		123
+	</view> -->
+	<slider-bar id="slider-bar" position="fixed" bindsliderBarTap="onSliderBarTap"></slider-bar>	
 
-	<view id="goods-classify-list" class="goods-classify-list" bindtap="onTap">
-		<view class="goods-classify" data-name="水果">
+	<scroll-view 
+		id="goods-classify-list" 
+		class="goods-classify-list"
+		scroll-into-view="{{'id-' + activeIndex}}"
+		bindscroll="onScroll"
+		scroll-y
+		scroll-with-animation
+	>
+		<view 
+			wx:for="{{list}}"
+			wx:key="name"
+			class="goods-classify" 
+			id="id-{{index}}" 
+		>
 			<view class="classify-name">
-				- 水果 -
+				- {{item.name}} -
 			</view>
 			<view class="goods-list">
-				<view class="goods-item">
-					<view class="goods-item-img"></view>
-					<view class="goods-item-info">
-						<view class="goods-item-name"></view>
-						<view class="goods-item-price"></view>
-						<view class="goods-item-desc"></view>
-					</view>
-				</view>
-
-				<view class="goods-item">
-					<view class="goods-item-img"></view>
-					<view class="goods-item-info">
-						<view class="goods-item-name"></view>
-						<view class="goods-item-price"></view>
-						<view class="goods-item-desc"></view>
-					</view>
-				</view>
-
-				<view class="goods-item">
-					<view class="goods-item-img"></view>
-					<view class="goods-item-info">
-						<view class="goods-item-name"></view>
-						<view class="goods-item-price"></view>
-						<view class="goods-item-desc"></view>
-					</view>
-				</view>
-
-				<view class="goods-item">
-					<view class="goods-item-img"></view>
-					<view class="goods-item-info">
-						<view class="goods-item-name"></view>
-						<view class="goods-item-price"></view>
-						<view class="goods-item-desc"></view>
-					</view>
-				</view>
-
-				<view class="goods-item">
-					<view class="goods-item-img"></view>
-					<view class="goods-item-info">
-						<view class="goods-item-name"></view>
-						<view class="goods-item-price"></view>
-						<view class="goods-item-desc"></view>
-					</view>
-				</view>
-
-				<view class="goods-item">
+				<view
+					wx:for="12345678910111213"
+					class="goods-item"
+				>
 					<view class="goods-item-img"></view>
 					<view class="goods-item-info">
 						<view class="goods-item-name"></view>
@@ -95,123 +68,5 @@
 				</view>
 			</view>
 		</view>
-
-		<view class="goods-classify" data-name="蔬菜">
-			<view class="classify-name">
-				- 蔬菜 -
-			</view>
-			<view class="goods-list">
-				<view class="goods-item">
-					<view class="goods-item-img"></view>
-					<view class="goods-item-info">
-						<view class="goods-item-name"></view>
-						<view class="goods-item-price"></view>
-						<view class="goods-item-desc"></view>
-					</view>
-				</view>
-
-				<view class="goods-item">
-					<view class="goods-item-img"></view>
-					<view class="goods-item-info">
-						<view class="goods-item-name"></view>
-						<view class="goods-item-price"></view>
-						<view class="goods-item-desc"></view>
-					</view>
-				</view>
-
-				<view class="goods-item">
-					<view class="goods-item-img"></view>
-					<view class="goods-item-info">
-						<view class="goods-item-name"></view>
-						<view class="goods-item-price"></view>
-						<view class="goods-item-desc"></view>
-					</view>
-				</view>
-			</view>
-		</view>
-
-		<view class="goods-classify" data-name="肉类">
-			<view class="classify-name">
-				- 肉类 -
-			</view>
-			<view class="goods-list">
-				<view class="goods-item">
-					<view class="goods-item-img"></view>
-					<view class="goods-item-info">
-						<view class="goods-item-name"></view>
-						<view class="goods-item-price"></view>
-						<view class="goods-item-desc"></view>
-					</view>
-				</view>
-			</view>
-		</view>
-
-		<view class="goods-classify" data-name="牛奶">
-			<view class="classify-name">
-				- 牛奶 -
-			</view>
-			<view class="goods-list">
-				<view class="goods-item">
-					<view class="goods-item-img"></view>
-					<view class="goods-item-info">
-						<view class="goods-item-name"></view>
-						<view class="goods-item-price"></view>
-						<view class="goods-item-desc"></view>
-					</view>
-				</view>
-
-				<view class="goods-item">
-					<view class="goods-item-img"></view>
-					<view class="goods-item-info">
-						<view class="goods-item-name"></view>
-						<view class="goods-item-price"></view>
-						<view class="goods-item-desc"></view>
-					</view>
-				</view>
-			</view>
-		</view>
-
-		<view class="goods-classify" data-name="饮料">
-			<view class="classify-name">
-				- 饮料 -
-			</view>
-			<view class="goods-list">
-				<view class="goods-item">
-					<view class="goods-item-img"></view>
-					<view class="goods-item-info">
-						<view class="goods-item-name"></view>
-						<view class="goods-item-price"></view>
-						<view class="goods-item-desc"></view>
-					</view>
-				</view>
-
-				<view class="goods-item">
-					<view class="goods-item-img"></view>
-					<view class="goods-item-info">
-						<view class="goods-item-name"></view>
-						<view class="goods-item-price"></view>
-						<view class="goods-item-desc"></view>
-					</view>
-				</view>
-
-				<view class="goods-item">
-					<view class="goods-item-img"></view>
-					<view class="goods-item-info">
-						<view class="goods-item-name"></view>
-						<view class="goods-item-price"></view>
-						<view class="goods-item-desc"></view>
-					</view>
-				</view>
-
-				<view class="goods-item">
-					<view class="goods-item-img"></view>
-					<view class="goods-item-info">
-						<view class="goods-item-name"></view>
-						<view class="goods-item-price"></view>
-						<view class="goods-item-desc"></view>
-					</view>
-				</view>
-			</view>
-		</view>
-	</view>
+	</scroll-view>
 </view>

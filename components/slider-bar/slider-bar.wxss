@@ -1,19 +1,34 @@
-/* components/slider-bar.wxss */
-
-.slider-bar {
-  display: flex;
-  flex-direction: row;
+.slider-bar-wrapper {
+  height: 60rpx;
   width: 750rpx;
+}
+.slider-bar {
+  /* display: flex;
+  flex-direction: row; */
+  width: 750rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  left: 0;
+
   padding: 10rpx 0;
   white-space: nowrap;
   background-color: #eee;
-  overflow-x: scroll;
+  z-index: 100;
 }
 .slider-bar::-webkit-scrollbar {
   width: 0;
   height: 0;
   color: transparent;
 }
+.slider-bar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 .slider-bar .bar-item {
+  display: inline-block;
   padding: 0 16rpx;
+}
+.slider-bar .bar-item.active {
+  color: red;
 }

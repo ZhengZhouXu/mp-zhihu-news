@@ -1,8 +1,21 @@
 <!--components/slider-bar.wxml-->
-<view id="slider-bar" class="slider-bar" bindtap="onTap">
-  <view class="bar-item" wx:for="{{list}}">
-    {{item.name}}
-  </view>
+    <scroll-view
+      id="slider-bar"
+      class="slider-bar {{isFixed ? 'fixed' : ''}}"
+      style="position:{{position}};top:{{computedTop + 'px'}};"
+      scroll-into-view="{{'id-' + activeIndex}}"
+      scroll-x
+      scroll-with-animation
+    >
+      <view 
+        wx:for="{{list}}"
+        wx:key="name"
+        class="bar-item {{index === activeIndex ? 'active' : ''}}" 
+        id="id-{{index}}"
+        data-index="{{index}}"
+        bindtap="onItemTap"
+      >
+        {{item.name}}
+      </view>
+  </scroll-view>
 
-  <view id="test">111</view>
-</view>

@@ -1,7 +1,12 @@
 /* pages/classify/classify.wxss */
 .container {
+  padding-top: 100rpx;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+}
+.test {
+  height: 300rpx;
 }
 
 /* .classify-tab */
@@ -30,8 +35,10 @@
 
 /* .goods-classify-list */
 .goods-classify-list {
-  padding-top: 68rpx;
+  /* margin-top: 100rpx; */
+  margin-top: 20rpx;
   width: 100%;
+  height: calc(100% - 20rpx);
 }
 .goods-classify-list .classify-name {
   text-align: center;

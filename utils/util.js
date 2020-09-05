@@ -14,6 +14,23 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+function throttle (fn, wait, firstImmediate) {
+  let timer = null;
+  return () => {
+    // if (timer === null && firstImmediate) {
+    //   fn();
+    // }
+    if (timer) return;
+    
+    timer = setTimeout(() => {
+      console.log(456);
+      fn();
+      timer = clearTimeout(timer);
+    }, wait);
+  }
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime,
+  throttle
 }
